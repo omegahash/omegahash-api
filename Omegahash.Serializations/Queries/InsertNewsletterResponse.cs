@@ -1,4 +1,4 @@
-﻿namespace Omegahash.Domain.Serializations.Responses;
+﻿namespace Omegahash.Domain.Serializations.Queries;
 
 public struct InsertNewsletterResponse
 {

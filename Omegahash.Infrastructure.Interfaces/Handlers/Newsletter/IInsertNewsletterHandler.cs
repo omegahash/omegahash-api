@@ -1,8 +1,8 @@
-﻿using Omegahash.Domain.Serializations.Requests;
+﻿using Omegahash.Domain.Serializations.Commands;
 
 namespace Omegahash.Infrastructure.Interfaces.Handlers.Newsletter;
 
 public interface IInsertNewsletterHandler
 {
-    Task HandleAsync(InsertNewsletterRequest command, CancellationToken cancellationToken);
+    Task HandleAsync(InsertNewsletterCommand command, CancellationToken cancellationToken);
 }

@@ -1,5 +1,5 @@
 ﻿using MongoDB.Bson;
-using Omegahash.Domain.Serializations.Requests;
+using Omegahash.Domain.Serializations.Commands;
 using Omegahash.Infrastructure.Data.Interfaces;
 using Omegahash.Infrastructure.Interfaces.Handlers.Newsletter;
 
@@ -9,7 +9,7 @@ using Omegahash.Domain.Entities;
 
 public class InsertNewsletterHandler(IMongoProvider provider) : IInsertNewsletterHandler
 {
-    public async Task HandleAsync(InsertNewsletterRequest command, CancellationToken cancellationToken)
+    public async Task HandleAsync(InsertNewsletterCommand command, CancellationToken cancellationToken)
     {
         var entity = new Newsletter
         {
