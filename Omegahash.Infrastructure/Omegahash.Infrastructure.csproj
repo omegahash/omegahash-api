@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Omegahash.Domain.Models\Omegahash.Domain.Entities.csproj" />
+    <ProjectReference Include="..\Omegahash.Infrastructure.Data\Omegahash.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\Omegahash.Infrastructure.Interfaces\Omegahash.Infrastructure.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="Queries\" />
+  </ItemGroup>
+
+</Project>
