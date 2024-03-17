@@ -1,0 +1,11 @@
+@Omegahash_HostAddress = http://localhost:5274
+
+GET {{Omegahash_HostAddress}}/wallets/
+Accept: application/json
+
+###
+
+GET {{Omegahash_HostAddress}}/wallets/1
+Accept: application/json
+
+###

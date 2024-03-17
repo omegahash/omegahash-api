@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\projetos\\github\\omegahash-api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DCDB8E5F-F6D0-4E42-A9BF-89672AC49758}|Omegahash.csproj|d:\\projetos\\github\\omegahash-api\\endpoints\\wallets\\getall\\endpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCDB8E5F-F6D0-4E42-A9BF-89672AC49758}|Omegahash.csproj|solutionrelative:endpoints\\wallets\\getall\\endpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Endpoint.cs",
+              "DocumentMoniker": "D:\\projetos\\github\\omegahash-api\\Endpoints\\Wallets\\GetAll\\Endpoint.cs",
+              "RelativeDocumentMoniker": "Endpoints\\Wallets\\GetAll\\Endpoint.cs",
+              "ToolTip": "D:\\projetos\\github\\omegahash-api\\Endpoints\\Wallets\\GetAll\\Endpoint.cs",
+              "RelativeToolTip": "Endpoints\\Wallets\\GetAll\\Endpoint.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T02:25:43.819Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
