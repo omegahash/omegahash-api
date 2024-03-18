@@ -9,17 +9,12 @@
   <ItemGroup>
     <ProjectReference Include="..\Omegahash.Domain.Models\Omegahash.Domain.Entities.csproj" />
     <ProjectReference Include="..\Omegahash.Infrastructure.Data\Omegahash.Infrastructure.Data.csproj" />
-    <ProjectReference Include="..\Omegahash.Infrastructure.Interfaces\Omegahash.Infrastructure.Interfaces.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Commands\" />
-    <Folder Include="Queries\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.9.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
   </ItemGroup>
 
 </Project>

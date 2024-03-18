@@ -7,11 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Omegahash.Api", "Omegahash.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Omegahash.Infrastructure", "Omegahash.Infrastructure\Omegahash.Infrastructure.csproj", "{C2245755-47A0-4D38-8E03-D14C4FABEA79}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Omegahash.Infrastructure.Interfaces", "Omegahash.Infrastructure.Interfaces\Omegahash.Infrastructure.Interfaces.csproj", "{48E7F4BA-04AF-4222-976A-42ABC5117732}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Omegahash.Domain.Entities", "Omegahash.Domain.Models\Omegahash.Domain.Entities.csproj", "{1FEEADA2-3021-41DA-96D6-C40CDFA8F8A8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omegahash.Domain.Serializations", "Omegahash.Serializations\Omegahash.Domain.Serializations.csproj", "{3655E210-F835-46C4-B1CE-88EDF9469C36}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omegahash.Infrastructure.Data", "Omegahash.Infrastructure.Data\Omegahash.Infrastructure.Data.csproj", "{984B7DC7-DEDD-460C-9AE4-4208E1CB4688}"
 EndProject
@@ -31,18 +27,10 @@ Global
 		{C2245755-47A0-4D38-8E03-D14C4FABEA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2245755-47A0-4D38-8E03-D14C4FABEA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2245755-47A0-4D38-8E03-D14C4FABEA79}.Release|Any CPU.Build.0 = Release|Any CPU
-		{48E7F4BA-04AF-4222-976A-42ABC5117732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48E7F4BA-04AF-4222-976A-42ABC5117732}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48E7F4BA-04AF-4222-976A-42ABC5117732}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48E7F4BA-04AF-4222-976A-42ABC5117732}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1FEEADA2-3021-41DA-96D6-C40CDFA8F8A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1FEEADA2-3021-41DA-96D6-C40CDFA8F8A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FEEADA2-3021-41DA-96D6-C40CDFA8F8A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FEEADA2-3021-41DA-96D6-C40CDFA8F8A8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3655E210-F835-46C4-B1CE-88EDF9469C36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3655E210-F835-46C4-B1CE-88EDF9469C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3655E210-F835-46C4-B1CE-88EDF9469C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3655E210-F835-46C4-B1CE-88EDF9469C36}.Release|Any CPU.Build.0 = Release|Any CPU
 		{984B7DC7-DEDD-460C-9AE4-4208E1CB4688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{984B7DC7-DEDD-460C-9AE4-4208E1CB4688}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{984B7DC7-DEDD-460C-9AE4-4208E1CB4688}.Release|Any CPU.ActiveCfg = Release|Any CPU

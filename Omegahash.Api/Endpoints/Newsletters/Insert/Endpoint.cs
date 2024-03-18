@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Omegahash.Domain.Serializations;
-using Omegahash.Domain.Serializations.Commands.Newsletter;
-using Omegahash.Infrastructure.Interfaces.Handlers.Newsletter;
+using Omegahash.Infrastructure.Commands.Newsletter;
+using Omegahash.Infrastructure.Handlers.Newsletter;
 
 namespace Omegahash.Endpoints.Marketings.RegisterToNewsletter;
 
@@ -18,12 +17,12 @@ public static class Endpoint
 
     private static async Task<IResult> InsertAsync
     (
-        [FromServices]IInsertNewsletterCommandHandler handler,
+        [FromServices]InsertNewsletterCommandHandler handler,
         [FromBody]InsertNewsletterCommand request,
         CancellationToken cancellationToken
     )
     {
-        await handler.HandleAsync(request, cancellationToken);
+        await handler.Handle(request, cancellationToken);
         
         return Results.NoContent();
     }

@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using Omegahash.Domain.Serializations.Queries;
+using Omegahash.Infrastructure.Queries;
 
 namespace Omegahash.Infrastructure.Handlers;
 

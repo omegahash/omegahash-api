@@ -13,7 +13,7 @@ public static class InfrastructureBuilder
         services.AddMediatR(config => config.RegisterServicesFromAssemblies(typeof(AssemblyReference).Assembly));
         services.AddTransient<InsertNewsletterCommandHandler>();
         services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
-        services.AddValidatorsFromAssembly(typeof(AssemblyReference).Assembly);
+        services.AddValidatorsFromAssemblyContaining<AssemblyReference>();
 
         return services;
     }

@@ -1,17 +1,19 @@
-﻿using MediatR;
+﻿using FluentValidation;
+using MediatR;
 using MongoDB.Bson;
-using Omegahash.Domain.Serializations.Commands.Newsletter;
+using Omegahash.Infrastructure.Commands.Newsletter;
 using Omegahash.Infrastructure.Data.Interfaces;
 
 namespace Omegahash.Infrastructure.Handlers.Newsletter;
 
 using Omegahash.Domain.Entities;
 
-public class InsertNewsletterCommandHandler(IMongoProvider provider) : IRequestHandler<InsertNewsletterCommand>
+public class InsertNewsletterCommandHandler(IMongoProvider provider, IValidator<InsertNewsletterCommand> validator) : IRequestHandler<InsertNewsletterCommand>
 {
-
     public async Task Handle(InsertNewsletterCommand command, CancellationToken cancellationToken)
     {
+        validator.ValidateAndThrow(command);
+
         var entity = new Newsletter
         {
             Id = ObjectId.GenerateNewId(),
