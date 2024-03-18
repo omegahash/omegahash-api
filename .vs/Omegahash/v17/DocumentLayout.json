@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\projetos\\github\\omegahash-api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DCDB8E5F-F6D0-4E42-A9BF-89672AC49758}|Omegahash.Api\\Omegahash.Api.csproj|d:\\projetos\\github\\omegahash-api\\omegahash.api\\endpoints\\newsletters\\insert\\endpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCDB8E5F-F6D0-4E42-A9BF-89672AC49758}|Omegahash.Api\\Omegahash.Api.csproj|solutionrelative:omegahash.api\\endpoints\\newsletters\\insert\\endpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DCDB8E5F-F6D0-4E42-A9BF-89672AC49758}|Omegahash.Api\\Omegahash.Api.csproj|d:\\projetos\\github\\omegahash-api\\omegahash.api\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCDB8E5F-F6D0-4E42-A9BF-89672AC49758}|Omegahash.Api\\Omegahash.Api.csproj|solutionrelative:omegahash.api\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2245755-47A0-4D38-8E03-D14C4FABEA79}|Omegahash.Infrastructure\\Omegahash.Infrastructure.csproj|d:\\projetos\\github\\omegahash-api\\omegahash.infrastructure\\handlers\\newsletter\\insertnewslettercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2245755-47A0-4D38-8E03-D14C4FABEA79}|Omegahash.Infrastructure\\Omegahash.Infrastructure.csproj|solutionrelative:omegahash.infrastructure\\handlers\\newsletter\\insertnewslettercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E7F4BA-04AF-4222-976A-42ABC5117732}|Omegahash.Infrastructure.Interfaces\\Omegahash.Infrastructure.Interfaces.csproj|d:\\projetos\\github\\omegahash-api\\omegahash.infrastructure.interfaces\\handlers\\newsletter\\iinsertnewslettercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E7F4BA-04AF-4222-976A-42ABC5117732}|Omegahash.Infrastructure.Interfaces\\Omegahash.Infrastructure.Interfaces.csproj|solutionrelative:omegahash.infrastructure.interfaces\\handlers\\newsletter\\iinsertnewslettercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Endpoint.cs",
-              "DocumentMoniker": "D:\\projetos\\github\\omegahash-api\\Omegahash.Api\\Endpoints\\Newsletters\\Insert\\Endpoint.cs",
-              "RelativeDocumentMoniker": "Omegahash.Api\\Endpoints\\Newsletters\\Insert\\Endpoint.cs",
-              "ToolTip": "D:\\projetos\\github\\omegahash-api\\Omegahash.Api\\Endpoints\\Newsletters\\Insert\\Endpoint.cs",
-              "RelativeToolTip": "Omegahash.Api\\Endpoints\\Newsletters\\Insert\\Endpoint.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "D:\\projetos\\github\\omegahash-api\\Omegahash.Api\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "Omegahash.Api\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "D:\\projetos\\github\\omegahash-api\\Omegahash.Api\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "Omegahash.Api\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAwwBsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T18:56:33.958Z",
+              "WhenOpened": "2024-03-18T03:50:26.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InsertNewsletterCommandHandler.cs",
+              "DocumentMoniker": "D:\\projetos\\github\\omegahash-api\\Omegahash.Infrastructure\\Handlers\\Newsletter\\InsertNewsletterCommandHandler.cs",
+              "RelativeDocumentMoniker": "Omegahash.Infrastructure\\Handlers\\Newsletter\\InsertNewsletterCommandHandler.cs",
+              "ToolTip": "D:\\projetos\\github\\omegahash-api\\Omegahash.Infrastructure\\Handlers\\Newsletter\\InsertNewsletterCommandHandler.cs",
+              "RelativeToolTip": "Omegahash.Infrastructure\\Handlers\\Newsletter\\InsertNewsletterCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T03:34:34.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IInsertNewsletterCommandHandler.cs",
+              "DocumentMoniker": "D:\\projetos\\github\\omegahash-api\\Omegahash.Infrastructure.Interfaces\\Handlers\\Newsletter\\IInsertNewsletterCommandHandler.cs",
+              "RelativeDocumentMoniker": "Omegahash.Infrastructure.Interfaces\\Handlers\\Newsletter\\IInsertNewsletterCommandHandler.cs",
+              "ToolTip": "D:\\projetos\\github\\omegahash-api\\Omegahash.Infrastructure.Interfaces\\Handlers\\Newsletter\\IInsertNewsletterCommandHandler.cs",
+              "RelativeToolTip": "Omegahash.Infrastructure.Interfaces\\Handlers\\Newsletter\\IInsertNewsletterCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T20:49:31.398Z",
               "EditorCaption": ""
             }
           ]

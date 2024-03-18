@@ -6,7 +6,7 @@ namespace Omegahash.Infrastructure.Data;
 
 public static class InfrastructureDataBuilder
 {
-    public static IServiceCollection AddDataProviders(this IServiceCollection services)
+    public static IServiceCollection AddInfrastructureData(this IServiceCollection services)
     {
         services.AddScoped<IMongoProvider, MongoProvider>();
 

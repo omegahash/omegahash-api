@@ -1,7 +1,7 @@
 using Microsoft.OpenApi.Models;
 using MongoDB.Driver;
+using Omegahash.Api.Middlewares;
 using Omegahash.Endpoints.Marketings.RegisterToNewsletter;
-using Omegahash.Handlers;
 using Omegahash.Infrastructure;
 using Omegahash.Infrastructure.Data;
 using Omegahash.Options;
@@ -13,11 +13,11 @@ var mongo = builder.Configuration.GetSection(nameof(Mongo)).Get<Mongo>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSingleton<IMongoClient>(new MongoClient(mongo?.ConnectionString));
 builder.Services.AddSwaggerGenNewtonsoftSupport();
-builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
+builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 
-builder.Services.AddDataProviders();
-builder.Services.AddHandlers();
+builder.Services.AddInfrastructureData();
+builder.Services.AddInfrastructure();
 
 builder.Services.AddSwaggerGen(c => new OpenApiInfo
 {
@@ -52,9 +52,10 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.UseExceptionHandler();
 
 app.MapNewsletterInsert();
 

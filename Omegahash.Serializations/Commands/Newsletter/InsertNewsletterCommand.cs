@@ -1,9 +1,9 @@
 ﻿using MediatR;
 using System.ComponentModel.DataAnnotations;
 
-namespace Omegahash.Domain.Serializations.Commands;
+namespace Omegahash.Domain.Serializations.Commands.Newsletter;
 
-public struct InsertNewsletterCommand : IRequest<string>
+public struct InsertNewsletterCommand : IRequest
 {
     [Required]
     [EmailAddress]

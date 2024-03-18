@@ -1,15 +1,16 @@
-﻿using MongoDB.Bson;
-using Omegahash.Domain.Serializations.Commands;
+﻿using MediatR;
+using MongoDB.Bson;
+using Omegahash.Domain.Serializations.Commands.Newsletter;
 using Omegahash.Infrastructure.Data.Interfaces;
-using Omegahash.Infrastructure.Interfaces.Handlers.Newsletter;
 
 namespace Omegahash.Infrastructure.Handlers.Newsletter;
 
 using Omegahash.Domain.Entities;
 
-public class InsertNewsletterHandler(IMongoProvider provider) : IInsertNewsletterHandler
+public class InsertNewsletterCommandHandler(IMongoProvider provider) : IRequestHandler<InsertNewsletterCommand>
 {
-    public async Task HandleAsync(InsertNewsletterCommand command, CancellationToken cancellationToken)
+
+    public async Task Handle(InsertNewsletterCommand command, CancellationToken cancellationToken)
     {
         var entity = new Newsletter
         {

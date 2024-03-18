@@ -1,14 +1,19 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using FluentValidation;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+using Omegahash.Infrastructure.Behaviors;
 using Omegahash.Infrastructure.Handlers.Newsletter;
-using Omegahash.Infrastructure.Interfaces.Handlers.Newsletter;
 
 namespace Omegahash.Infrastructure;
 
 public static class InfrastructureBuilder
 {
-    public static IServiceCollection AddHandlers(this IServiceCollection services)
+    public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
-        services.AddTransient<IInsertNewsletterHandler, InsertNewsletterHandler>();
+        services.AddMediatR(config => config.RegisterServicesFromAssemblies(typeof(AssemblyReference).Assembly));
+        services.AddTransient<InsertNewsletterCommandHandler>();
+        services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+        services.AddValidatorsFromAssembly(typeof(AssemblyReference).Assembly);
 
         return services;
     }
